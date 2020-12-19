@@ -1,6 +1,6 @@
 # what is the product of the three entries that sum to 2020?
 # turn .txt into a list of nums
-with open("day1input.txt", "r") as day1_file:
+with open("day1input.txt") as day1_file:
     inputs = [int(num) for num in day1_file]
 
 for num1 in inputs:
