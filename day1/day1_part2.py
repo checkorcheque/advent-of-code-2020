@@ -7,6 +7,6 @@ for num1 in inputs:
     for num2 in inputs:
         for num3 in inputs:
             if num1 + num2 + num3 == 2020:
-                product(num1 * num2 * num3)
-
+                product = (num1 * num2 * num3)
+                
 print(product)
