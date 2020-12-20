@@ -9,9 +9,7 @@ with open("day2input.txt") as day2_file:
         value = 0
         match = pattern.search(line)
         minimum, maximum, character, password = match.groups()
-        for letter in password:
-            if letter == character:
-                value += 1
+        value = password.count(character)
         if value >= int(minimum) and value <= int(maximum):
             correct_passwords += 1
 
